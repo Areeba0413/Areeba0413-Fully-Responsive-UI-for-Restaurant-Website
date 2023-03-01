@@ -1,0 +1,357 @@
+
+/*css reset */
+
+*{margin: 0;
+ padding: 0;
+ font-family: 'Mali', cursive;
+}
+
+/* slide to a section through anchor tag in 
+        landing page website. */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* css variables */
+:root{
+    --nav-height:59px;
+}
+
+/* ----------Navigation Bar----------- */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+#navbar::before{
+    content:"";
+    background-color:#000000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* logo & image */
+
+#logo{
+    margin: 5px 30px;
+
+}
+#logo img{
+    margin: 10px;
+    width: 50px;
+    height: 70px;
+}
+
+/* list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#navbar ul li a{
+    display:block;
+    text-decoration: none;
+    padding: 5px 25px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color:#e0a068;
+    text-decoration: underline;
+    text-underline-offset: 13px;
+    font-weight: bolder;
+}
+
+/* Home section */
+#home::before{
+    content:"";
+    background: url(../img/bg1.jpg) no-repeat center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    /* height: 730px; */
+    height: 642px;
+}
+
+#home h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+#home p{
+    text-align: center;
+    color: white;
+    width: 700px;
+    padding: 7px;
+    font-weight: bold;
+} 
+
+#home .btn{
+    margin: 30px;
+}
+
+/* Services section */
+
+.service-container{
+    /* position: relative; */
+    top: 0px;
+    left: 0px;
+    /* height: 730px; */
+    /* height: 760px; */
+    padding-top: 50px;
+    margin: 60px 60px;
+}
+
+.services{
+    display: flex;
+    /* margin: 34px; */
+    justify-content: space-evenly;
+}
+
+.services .box{
+    border: 4px solid #7B3D06;
+    width: 310px;
+    border-radius: 15px;
+    background-color: #e0a068;
+    margin: 30px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+
+.services div.box:hover{
+    transform: scale(1.06);
+    box-shadow: 6px 6px 6px rgb(194, 179, 179);
+}
+
+
+.services .box img{
+    height: 292px;
+    width: 310px;
+    border-radius: 10px;
+}
+
+/* about-us section */
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 600px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.reviews{
+    display: flex;
+    margin: 10px 55px;
+    align-items: center;
+}
+
+.reviews .box{
+    display: flex;
+    /* border-right: 2px solid #7B3D06; */
+    padding: 10px 10px;
+    margin: 30px 0px;
+}
+
+.reviews .box img{
+
+    display: flex;
+    width: 220px;
+    height: 200px;
+    border: 5px solid #7B3D06;
+}
+
+/* contact us section */
+
+.contact::before{
+    content:"";
+    background: url(../img/bg2.jpg) no-repeat center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+.contact{
+    margin: 0px;
+    /* height: 700px; */
+
+}
+
+.h-contact{
+    padding-top: 18px;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: flex-end;
+    /* padding-bottom: 10px; */
+}
+
+.c1-c2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback{
+    font-size: 3.4rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.feedback2{
+    display: none;
+}
+.contact-box{
+    width: 55%;
+}
+
+.form-box{
+    border: 4px solid #7B3D06;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 40px 200px;
+    padding-right: 50px;
+
+}
+
+.form-element{
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-element button{
+    width: 106%;
+    margin-top: 10px;
+}
+
+label{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+input, #Message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px;
+    background:whitesmoke;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    color: black;
+    outline: none;
+    padding: 10px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-size: 0.6rem;
+
+}
+
+
+
+/* utility classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 15px;
+}
+
+.h-secondary{
+    font-size: 1rem;
+    padding: 10px;
+}
+.btn{
+    padding: 10px;
+    background-color: #7B3D06;
+    border: solid #ffffff;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 190px;
+    border-radius: 10px;
+    cursor: pointer;   
+    transition: all 0.2s ease-out;
+}
+
+.btn:hover{
+    background-color: #9b5111;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    transform: scale(1.06);
+
+}
+
+.center-align{
+    text-align: center;
+}
+
+.food-heading{
+    color: #7B3D06;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+}
+
+.vl{
+    border-right: 2px solid black;
+}
+
+.read-more-btn{
+    border: solid black;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 7px 7px;
+    font-weight: bold;
+    width: 100px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.read-more-btn:hover{
+transform: scale(1.06);
+
+}

@@ -1,0 +1,140 @@
+
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    padding: 13px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* home section */
+#home{
+height: 470px;
+padding: 5px 0px;
+}
+
+#home::before{
+
+    height: 670px;
+}
+
+#home p{
+    font-size: 1rem;
+    width: 350px;
+}
+
+
+/* services section */
+
+.services{
+    flex-wrap: wrap;
+}
+
+.service-container h2{
+    font-size: 1.3rem;
+}
+
+.services .box{
+
+    width: 250px;
+    
+}
+
+.services .box img{
+    width: 250px;
+    height: 180px;
+}
+
+/* about-us section */
+
+.about-us{
+    padding: 0px;
+    margin: 0px;
+}
+
+.about-us::before{
+    padding: 0px;
+}
+.about-us .reviews{
+
+    flex-wrap: wrap;
+    border-right: none;
+    margin: 10px 10px;
+
+}
+
+.reviews .box{
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.reviews .box img{
+width: 120px;
+height: 100px;
+margin-right: 20px;
+}
+
+.about-us h1{
+    margin: 50px 20px 0px 10px;
+}
+
+/* contact-us section */
+
+
+.h-contact{
+    padding-top: 30px;
+}
+
+.feedback{
+    
+    display: none;
+}
+
+.feedback2{
+    
+    display:block;
+    margin: 10px 10px 0px 10px;
+    font-size: 1.3rem;
+}
+
+.contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+
+    margin: 20px 20px;
+    padding: 10px 25px;
+    padding-right: 30px;
+
+}
+
+/* footer section */
+
+/* utility classes */
+
+.h-primary{
+
+    font-size: 2.5rem;
+    padding: 0px 10px;
+}
+
+.h-secondary{
+    font-size: 0.8rem;
+}
+
+.btn{
+    font-size: 1rem;
+    padding: 7px;
+    width: 150px;
+}
+
+.btn:hover{
+    font-size: 1rem;
+    padding: 7px;
+
+}
